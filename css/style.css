@@ -1,0 +1,97 @@
+/*  File: css/style.css
+ *  HW5 - Scrabble (One Line)
+ *  Name: Sri Bhargava Dendukuri
+ *  Course: COMP 4610 GUI I
+ */
+
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+/* Score box */
+#score-area {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+
+/* Board container (one row) */
+#board {
+  display: flex;
+  gap: 4px;
+  padding: 10px;
+  border: 2px solid #444;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+/* Each board square (droppable target) */
+.board-square {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  position: relative;
+}
+
+/* Bonus square labels (optional text overlay) */
+.bonus-label {
+  position: absolute;
+  font-size: 10px;
+  text-align: center;
+  padding: 2px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 4px;
+}
+
+/* Rack */
+#rack-container {
+  position: relative;
+  width: 640px; /* matches rack image width */
+  margin-bottom: 20px;
+}
+
+#rack-image {
+  width: 640px;
+  height: auto;
+  display: block;
+}
+
+/* Tiles sit "on top" of the rack image */
+#rack {
+  position: absolute;
+  top: 18px;      /* tweak later if needed */
+  left: 18px;     /* tweak later if needed */
+  width: 604px;   /* rack inner space */
+  height: 70px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Tile image styling */
+.tile {
+  width: 60px;
+  height: 60px;
+  cursor: grab;
+}
+
+.tile:active {
+  cursor: grabbing;
+}
+
+/* Controls */
+#controls button {
+  margin-right: 10px;
+  padding: 8px 12px;
+}

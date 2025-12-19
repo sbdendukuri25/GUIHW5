@@ -1,0 +1,48 @@
+<!--
+/*  File: index.html
+ *  HW5 - Scrabble (One Line)
+ *  Name: Sri Bhargava Dendukuri
+ *  Course: COMP 4610 GUI I
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HW5 – Scrabble (One Line)</title>
+
+  <link rel="stylesheet"
+        href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>HW5 – Scrabble (One Line)</h1>
+
+  <div id="score-area">
+    <strong>Current Word Score:</strong> <span id="word-score">0</span><br>
+    <strong>Total Score:</strong> <span id="total-score">0</span>
+  </div>
+
+  <div id="board"></div>
+
+  <div id="rack-container">
+    <img id="rack-image"
+         src="images/rack/scrabble-tile-holder-406774_640.png"
+         alt="Tile Rack">
+    <div id="rack"></div>
+  </div>
+
+  <div id="controls">
+    <button id="submit-word">Submit Word</button>
+    <button id="restart-game">Restart Game</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="js/Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+  <script src="js/scrabble.js"></script>
+</body>
+</html>
