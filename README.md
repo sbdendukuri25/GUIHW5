@@ -6,11 +6,10 @@
 **Assignment:** HW5 – Implementing a Bit of Scrabble with Drag-and-Drop  
 
 **Live Demo:**  
-(Add GitHub Pages URL here after deployment)
+https://sbdendukuri25.github.io/GUIHW5/
 
 **Repository:**  
-(Add your GitHub repository link here)
-
+https://github.com/sbdendukuri25/GUIHW5.git
 ---
 
 ## Description
